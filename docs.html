@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Docs — Resume Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <header class="nav">
+      <a class="nav-brand" href="/">Resume Studio</a>
+      <nav class="nav-links">
+        <a href="/docs.html">Docs</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/download.html" class="nav-cta">Download</a>
+      </nav>
+    </header>
+
+    <main class="page narrow">
+      <p class="eyebrow">Quickstart</p>
+      <h1>Docs</h1>
+
+      <h2>1. Install</h2>
+      <p>
+        <a href="/download.html">Download for Windows</a>, extract, run
+        <code>Resume Studio.exe</code>.
+      </p>
+
+      <h2>2. Add an API key</h2>
+      <p>
+        Open <strong>Settings</strong>. Choose OpenAI, Anthropic, or Gemini. Paste your key. Keys
+        are stored encrypted on your machine via Electron safeStorage.
+      </p>
+
+      <h2>3. Open a workspace</h2>
+      <p>
+        Click <strong>Open workspace folder</strong>. Resume Studio creates
+        <code>base-resume.md</code> and <code>resumes/</code> if missing. Paste your master resume
+        into <code>base-resume.md</code> and save (<code>Ctrl+S</code>).
+      </p>
+
+      <h2>4. Tailor from a JD</h2>
+      <p>
+        In the AI panel, open <strong>Tailor from JD</strong>. Enter company + role, paste the job
+        description, generate. A file lands at
+        <code>resumes/company--role.md</code>.
+      </p>
+
+      <h2>5. Refine and export</h2>
+      <p>
+        Use <strong>Edit open file</strong> chat for tweaks. Click <strong>Export PDF</strong> for
+        ATS upload. You apply manually — Resume Studio never submits applications.
+      </p>
+
+      <h2>Tips</h2>
+      <ul>
+        <li>Never invent employers or metrics — the model is instructed to use only base-resume facts.</li>
+        <li>You can point the app at an existing job-automation folder.</li>
+        <li>If Windows SmartScreen warns, choose More info → Run anyway (unsigned build).</li>
+      </ul>
+    </main>
+
+    <footer class="footer">
+      <p>Resume Studio · Free for Windows · Bring your own API key</p>
+    </footer>
+  </body>
+</html>

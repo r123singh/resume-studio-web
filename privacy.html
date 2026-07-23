@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy — Resume Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <header class="nav">
+      <a class="nav-brand" href="/">Resume Studio</a>
+      <nav class="nav-links">
+        <a href="/docs.html">Docs</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/download.html" class="nav-cta">Download</a>
+      </nav>
+    </header>
+
+    <main class="page narrow">
+      <p class="eyebrow">Trust</p>
+      <h1>Privacy</h1>
+      <p>
+        Resume Studio is a desktop app. Your resumes stay in the folder you open. API keys are
+        stored locally with Electron safeStorage when available.
+      </p>
+      <h2>What leaves your machine</h2>
+      <ul>
+        <li>
+          When you run Tailor or Edit, resume text and job descriptions are sent to the LLM
+          provider you chose (OpenAI, Anthropic, or Google Gemini) using your key.
+        </li>
+        <li>We do not operate a Resume Studio account system or store your resumes in our cloud.</li>
+      </ul>
+      <h2>What we do not do</h2>
+      <ul>
+        <li>No auto-submit to job boards or ATS forms.</li>
+        <li>No selling of resume data.</li>
+        <li>This marketing site may use standard hosting analytics from the platform (Vercel).</li>
+      </ul>
+      <h2>Contact</h2>
+      <p>
+        Questions: use the GitHub repository issues for
+        <a href="https://github.com/r123singh/resume-studio">r123singh/resume-studio</a>.
+      </p>
+    </main>
+
+    <footer class="footer">
+      <p>Resume Studio · Free for Windows · Bring your own API key</p>
+    </footer>
+  </body>
+</html>

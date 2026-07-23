@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Studio — AI resume editor for Windows</title>
+    <meta
+      name="description"
+      content="Resume Studio is a free Cursor-like AI editor for tailoring resumes. Paste a job description, generate a fit-focused draft, refine in chat, export PDF. Bring your own API key."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <div class="bg"></div>
+    <header class="nav">
+      <a class="nav-brand" href="/">Resume Studio</a>
+      <nav class="nav-links">
+        <a href="/docs.html">Docs</a>
+        <a href="/pricing.html">Pricing</a>
+        <a href="/download.html" class="nav-cta">Download</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <p class="eyebrow">Free for Windows · Bring your own API key</p>
+      <h1>Resume Studio</h1>
+      <p class="lede">
+        A Cursor-like AI editor for resumes. Paste a job description, generate a tailored draft,
+        refine in chat, export PDF — then apply yourself.
+      </p>
+      <div class="cta-row">
+        <a class="btn primary" id="hero-download" href="/download.html">Download for Windows</a>
+        <a class="btn ghost" href="/docs.html">Docs</a>
+      </div>
+    </main>
+
+    <section class="mock">
+      <div class="mock-window" aria-hidden="true">
+        <div class="mock-top">
+          <span></span><span></span><span></span>
+          <strong>Resume Studio</strong>
+        </div>
+        <div class="mock-panes">
+          <aside>
+            <div class="mock-label">Explorer</div>
+            <p>base-resume.md</p>
+            <p>resumes/</p>
+            <p class="active">simpplr--senior-pm.md</p>
+          </aside>
+          <div class="mock-editor">
+            <div class="mock-label">Editor</div>
+            <pre># Senior Product Manager | Enterprise AI
+
+## Summary
+Launched agentic AI platform…
++35% engagement · governance · evals</pre>
+          </div>
+          <aside class="mock-chat">
+            <div class="mock-label">AI · Tailor from JD</div>
+            <p>Company · Role · Paste JD</p>
+            <div class="mock-btn">Generate tailored resume</div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="values">
+      <article>
+        <h2>Tailor from a JD</h2>
+        <p>Turn your master resume into a role-specific markdown file with cover letter snippets.</p>
+      </article>
+      <article>
+        <h2>Edit like an IDE</h2>
+        <p>File tree, Monaco editor, and chat that rewrites the open resume — not a chat-only toy.</p>
+      </article>
+      <article>
+        <h2>Your keys, your machine</h2>
+        <p>OpenAI, Anthropic, or Gemini. Keys stay encrypted locally. No accounts. No auto-apply.</p>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <p>Resume Studio · Free for Windows · Bring your own API key</p>
+      <p class="fine">
+        Not affiliated with Cursor. Does not auto-submit job applications.
+        <a href="/privacy.html">Privacy</a>
+      </p>
+    </footer>
+    <script src="/site.js"></script>
+  </body>
+</html>
