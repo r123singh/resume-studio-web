@@ -1,0 +1,8 @@
+.git
+.vercel
+node_modules
+scripts
+LINKEDIN.md
+README.md
+package.json
+package-lock.json

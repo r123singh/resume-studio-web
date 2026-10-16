@@ -19,7 +19,7 @@ cd D:\MyProjects\resume-studio-web
 npx --yes serve .
 ```
 
-Live site: https://r123singh.github.io/resume-studio-web/
+Live site: https://resume-studio-web-seven.vercel.app/
 
 ## Deploy
 

@@ -7,7 +7,7 @@ Use this copy when creating the LinkedIn **Company Page**.
 | Field | Value |
 |-------|--------|
 | Name | Resume Studio |
-| Website | https://r123singh.github.io/resume-studio-web/ |
+| Website | https://resume-studio-web-seven.vercel.app/ |
 | Industry | Software Development |
 | Company size | 1 employee (or 2–10) |
 | Company type | Privately Held |
@@ -29,7 +29,7 @@ Open your master resume, paste a job description, and generate a tailored draft.
 - Keys and mail app passwords stay on your machine
 - You confirm every email and WhatsApp send. No auto-apply to job boards
 
-Download: https://r123singh.github.io/resume-studio-web/download.html
+Download: https://resume-studio-web-seven.vercel.app/download
 
 ## Specialties
 
@@ -48,7 +48,7 @@ Paste a job → tailored resume → apply kit. Or start from job hunt, recruiter
 
 NVIDIA is included. No account. Nothing is sent until you confirm.
 
-Download: https://r123singh.github.io/resume-studio-web/download.html
+Download: https://resume-studio-web-seven.vercel.app/download
 
 #OpenToWork #ProductManagement #AI #JobSearch
 
@@ -57,6 +57,6 @@ Download: https://r123singh.github.io/resume-studio-web/download.html
 1. Create company page named Resume Studio
 2. Upload logo + cover
 3. Paste tagline + About
-4. Set website URL to https://r123singh.github.io/resume-studio-web/
+4. Set website URL to https://resume-studio-web-seven.vercel.app/
 5. Publish launch post and pin it
 6. Add company as experience on your personal LinkedIn profile
