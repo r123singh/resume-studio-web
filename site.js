@@ -1,6 +1,6 @@
 async function loadDownloadMeta() {
   try {
-    const res = await fetch('/download-meta.json', { cache: 'no-store' })
+    const res = await fetch('download-meta.json', { cache: 'no-store' })
     if (!res.ok) return null
     return await res.json()
   } catch {
