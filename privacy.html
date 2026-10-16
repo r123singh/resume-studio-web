@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Privacy — Resume Studio</title>
+    <meta
+      name="description"
+      content="Resume Studio keeps resumes in the folder you open. Model calls, mail, and WhatsApp only leave your machine when you choose a cloud provider or confirm a send."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,22 +32,39 @@
       <p class="eyebrow">Trust</p>
       <h1>Privacy</h1>
       <p>
-        Resume Studio is a desktop app. Your resumes stay in the folder you open. API keys are
-        stored locally with Electron safeStorage when available.
+        Resume Studio is a desktop app. Your resumes stay in the folder you open. API keys and mail
+        app passwords are stored locally with Electron safeStorage when available.
       </p>
       <h2>What leaves your machine</h2>
       <ul>
         <li>
-          When you run Tailor or Edit, resume text and job descriptions are sent to the LLM
-          provider you chose (OpenAI, Anthropic, or Google Gemini) using your key.
+          Tailor, chat edit, evidence tailor, interview prep, and optional “polish with AI” send
+          resume text and job text to the model provider you selected: NVIDIA, OpenAI, Anthropic,
+          Google Gemini, or Amazon Bedrock.
         </li>
-        <li>We do not operate a Resume Studio account system or store your resumes in our cloud.</li>
+        <li>
+          <strong>Ollama</strong> talks to localhost. Those prompts are not sent to a cloud model.
+        </li>
+        <li>
+          <strong>Job research</strong> fetches a posting only after you turn web research on.
+          Pasted job text is processed locally.
+        </li>
+        <li>
+          <strong>Mail</strong> fetch and send talk to the mail host you configure (IMAP and SMTP).
+          Message bodies are not sent to a model unless you choose polish with AI. Nothing is sent
+          until you confirm the recipient.
+        </li>
+        <li>
+          <strong>WhatsApp</strong> paste stays on this PC unless you polish with AI. Open WhatsApp
+          hands the ping to <code>wa.me</code>. You send it yourself.
+        </li>
       </ul>
       <h2>What we do not do</h2>
       <ul>
         <li>No auto-submit to job boards or ATS forms.</li>
+        <li>No Resume Studio cloud account in this public release. There is no hosted copy of your resumes.</li>
         <li>No selling of resume data.</li>
-        <li>This marketing site may use standard hosting analytics from the platform (Vercel).</li>
+        <li>This marketing site may use standard hosting logs from the platform (Vercel).</li>
       </ul>
       <h2>Contact</h2>
       <p>
@@ -53,7 +74,7 @@
     </main>
 
     <footer class="footer">
-      <p>Resume Studio · Free for Windows · Bring your own API key</p>
+      <p>Resume Studio · Free for Windows · NVIDIA included</p>
     </footer>
   </body>
 </html>

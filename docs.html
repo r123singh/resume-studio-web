@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Docs — Resume Studio</title>
+    <meta
+      name="description"
+      content="Install Resume Studio on Windows, tailor a resume, build an apply kit, and use Mail, WhatsApp, job hunt, and evidence-backed edits."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -30,46 +34,107 @@
 
       <h2>1. Install</h2>
       <p>
-        <a href="/download.html">Download for Windows</a>, extract, run
-        <code>Resume Studio.exe</code>.
+        <a href="/download.html">Download for Windows</a>, extract, and run
+        <code>Resume Studio.exe</code>. Windows 10 or 11, 64-bit.
       </p>
 
-      <h2>2. Add an API key</h2>
-      <p>
-        Open <strong>Settings</strong>. Choose OpenAI, Anthropic, or Gemini. Paste your key. Keys
-        are stored encrypted on your machine via Electron safeStorage.
-      </p>
+      <h2>2. Choose a model</h2>
+      <p>Open <strong>Settings</strong>. You can start immediately, or bring your own key.</p>
+      <ul>
+        <li><strong>NVIDIA NIM</strong> — included. No key to paste.</li>
+        <li><strong>Ollama</strong> — local and free. Install Ollama, pull a model, and pick it in Settings. Prompts stay on your machine.</li>
+        <li><strong>OpenAI, Anthropic, Gemini, or Amazon Bedrock</strong> — optional. Keys stay encrypted on this PC.</li>
+      </ul>
 
       <h2>3. Open a workspace</h2>
       <p>
         Click <strong>Open workspace folder</strong>. Resume Studio creates
-        <code>base-resume.md</code> and <code>resumes/</code> if missing. Paste your master resume
-        into <code>base-resume.md</code> and save (<code>Ctrl+S</code>).
+        <code>base-resume.md</code>, <code>job-preferences.md</code>, <code>resumes/</code>, and
+        <code>apply-kits/</code> if they are missing. Paste your master resume into
+        <code>base-resume.md</code> and save (<code>Ctrl+S</code>).
       </p>
 
       <h2>4. Tailor from a JD</h2>
       <p>
-        In the AI panel, open <strong>Tailor from JD</strong>. Enter company + role, paste the job
-        description, generate. A file lands at
-        <code>resumes/company--role.md</code>.
+        In the AI panel, open <strong>Tailor from JD</strong>. Enter company and role, paste the
+        job description, and generate. The draft lands at <code>resumes/company--role.md</code>.
+        Large writes show a diff first — nothing is saved until you accept it.
       </p>
 
-      <h2>5. Refine and export</h2>
+      <h2>5. Apply kit, tracker, and hunt</h2>
       <p>
-        Use <strong>Edit open file</strong> chat for tweaks. Click <strong>Export PDF</strong> for
-        ATS upload. You apply manually — Resume Studio never submits applications.
+        <strong>Apply kit</strong> writes <code>apply-kits/company--role/</code> with the resume
+        PDF, cover letter, form snippets, and a checklist, and logs the row in
+        <code>applications.csv</code>.
       </p>
+      <p>
+        <strong>Tracker</strong> filters those rows. Mark applied or skipped, and open the job URL
+        or the kit folder.
+      </p>
+      <p>
+        <strong>Hunt</strong> searches RemoteOK and Remotive, ranks postings against
+        <code>job-preferences.md</code>, and can prepare a selected job into a tailored resume plus
+        kit.
+      </p>
+
+      <h2>6. Mail inbox</h2>
+      <p>
+        Open <strong>Mail</strong> (<code>Ctrl+Shift+L</code>). Fetch over IMAP (Gmail, Outlook,
+        Yahoo, Zoho, iCloud, or a custom host), import an <code>.eml</code>, or paste a forwarded
+        JD. The app password is stored encrypted and is not sent to a model.
+      </p>
+      <p>
+        Pick a job, then <strong>Send reply</strong> or <strong>Tailor + kit</strong>. Send uses
+        SMTP and asks you to confirm the recipient. <strong>New mail</strong> is a blank message
+        for a follow-up that is not tied to an inbox job. You can attach <code>resume.pdf</code>
+        after the kit exists.
+      </p>
+
+      <h2>7. WhatsApp desk</h2>
+      <p>
+        Open <strong>WhatsApp</strong> (<code>Ctrl+Shift+M</code>) and paste the recruiter thread.
+        Parsing is local: name, phone, company, role, and a short ping meant to be read on a phone.
+      </p>
+      <p>
+        <strong>Open WhatsApp</strong> launches <code>wa.me</code> with the ping filled in. Attach
+        the PDF from the apply kit yourself — the link cannot attach files. Resume Studio does not
+        send the message.
+      </p>
+
+      <h2>8. Evidence, agent, and interview prep</h2>
+      <ul>
+        <li>
+          <strong>Evidence</strong> (<code>Ctrl+Shift+E</code>) — research a job URL (opt in first)
+          or paste the posting. Suggested bullets cite the snippets they came from. Accept them one
+          by one.
+        </li>
+        <li>
+          <strong>Agent mode</strong> — in Settings, the model can list, read, and search your
+          workspace, then propose an edit. The file changes only after you accept the diff.
+        </li>
+        <li>
+          <strong>Interview prep</strong> — from an open tailored resume or a Tracker row, write
+          <code>interview-prep/company--role.md</code>.
+        </li>
+        <li>
+          <strong>Recruiter Lens</strong> — Edit, ATS, and Recruiter scan modes, plus a six-second
+          skim preview.
+        </li>
+        <li><strong>Role variants</strong> — Frontend, Backend, and Product drafts under <code>variants/</code>.</li>
+      </ul>
 
       <h2>Tips</h2>
       <ul>
-        <li>Never invent employers or metrics — the model is instructed to use only base-resume facts.</li>
-        <li>You can point the app at an existing job-automation folder.</li>
-        <li>If Windows SmartScreen warns, choose More info → Run anyway (unsigned build).</li>
+        <li>The model is instructed to use only facts already in your resume. It should not invent employers, titles, dates, or metrics.</li>
+        <li><code>Ctrl+Shift+P</code> opens the command palette. <code>Ctrl+P</code> jumps to a file.</li>
+        <li>You can point the app at an existing job-search folder.</li>
+        <li>If Windows SmartScreen warns, choose More info → Run anyway. This build is unsigned.</li>
       </ul>
     </main>
 
     <footer class="footer">
-      <p>Resume Studio · Free for Windows · Bring your own API key</p>
+      <p>Resume Studio · Free for Windows · NVIDIA included</p>
+      <p class="fine"><a href="/privacy.html">Privacy</a> · <a href="/download.html">Download</a></p>
     </footer>
   </body>
 </html>

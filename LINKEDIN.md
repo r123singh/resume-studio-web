@@ -7,32 +7,33 @@ Use this copy when creating the LinkedIn **Company Page**.
 | Field | Value |
 |-------|--------|
 | Name | Resume Studio |
-| Website | _(paste your Vercel URL after deploy)_ |
+| Website | https://r123singh.github.io/resume-studio-web/ |
 | Industry | Software Development |
 | Company size | 1 employee (or 2–10) |
 | Company type | Privately Held |
-| Tagline | Free Cursor-like AI editor for resumes — tailor from a JD, chat-edit, export PDF. BYO API key. |
+| Tagline | Free Windows app to tailor a resume, build an apply kit, and answer recruiter email and WhatsApp. |
 
 Tagline must stay under ~120 characters. Short variant if needed:
 
-> Free AI resume editor for Windows. Paste a JD, tailor, export PDF. Bring your own API key.
+> Free AI resume workspace for Windows. Tailor, apply kit, mail, and WhatsApp. NVIDIA included.
 
 ## About
 
-Resume Studio is a free Windows desktop app for AI-assisted resume editing.
+Resume Studio is a free Windows desktop app for the apply loop, not a chat box that rewrites a resume once.
 
-Job seekers waste hours rewriting resumes for every role. Resume Studio gives you a Cursor-like workspace: open your master resume, paste a job description, generate a tailored markdown draft with cover-letter snippets, refine it in chat, and export a PDF — then apply yourself.
+Open your master resume, paste a job description, and generate a tailored draft. Build an apply kit (PDF, cover letter, form snippets, checklist) and track what you sent. Search RemoteOK and Remotive, pull recruiter mail over IMAP, or paste a WhatsApp thread and get a short phone ping.
 
 - Free to download
-- Bring your own OpenAI, Anthropic, or Gemini API key
-- Keys stay on your machine
-- No auto-apply to job boards
+- NVIDIA NIM included — no key required to start
+- Ollama runs locally; OpenAI, Anthropic, Gemini, and Bedrock are optional
+- Keys and mail app passwords stay on your machine
+- You confirm every email and WhatsApp send. No auto-apply to job boards
 
-Download: _(website URL)_
+Download: https://r123singh.github.io/resume-studio-web/download.html
 
 ## Specialties
 
-AI resume editor, Product management tools, Job search software, Desktop productivity, Generative AI
+AI resume editor, Job search software, Desktop productivity, Generative AI, Recruiting workflow
 
 ## Logo / cover
 
@@ -41,13 +42,13 @@ AI resume editor, Product management tools, Job search software, Desktop product
 
 ## Launch post (pin)
 
-Shipping Resume Studio — a free, Cursor-like AI editor for resumes on Windows.
+Shipping Resume Studio — a free Windows workspace for tailoring resumes and finishing the application.
 
-Paste a job description → get a tailored resume markdown → chat-edit → export PDF.
+Paste a job → tailored resume → apply kit. Or start from job hunt, recruiter email, or a WhatsApp thread.
 
-Bring your own API key. No accounts. No auto-apply.
+NVIDIA is included. No account. Nothing is sent until you confirm.
 
-Download: _(website /download)_
+Download: https://r123singh.github.io/resume-studio-web/download.html
 
 #OpenToWork #ProductManagement #AI #JobSearch
 
@@ -56,6 +57,6 @@ Download: _(website /download)_
 1. Create company page named Resume Studio
 2. Upload logo + cover
 3. Paste tagline + About
-4. Set website URL to the live Vercel site
+4. Set website URL to https://r123singh.github.io/resume-studio-web/
 5. Publish launch post and pin it
 6. Add company as experience on your personal LinkedIn profile
