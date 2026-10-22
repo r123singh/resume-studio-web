@@ -1,9 +1,9 @@
 {
-  "version": "1.1.1",
-  "artifact": "Resume-Studio-win-x64-1.1.1.rsz",
-  "sha256": "4D2B604AEB74E760CA7243914A202779A6FAB708EB92D5FD75A63596369A939C",
-  "sizeBytes": 360468026,
+  "version": "1.1.2",
+  "artifact": "Resume-Studio-win-x64-1.1.2.rsz",
+  "sha256": "CA634144BB317E4C0AA16A65A7BE40AD4FC1AF4FB8E0EB90981E82B9E36344EE",
+  "sizeBytes": 371509461,
   "githubRepo": "r123singh/resume-studio",
-  "downloadUrl": "https://github.com/r123singh/resume-studio/releases/download/v1.1.1/Resume-Studio-win-x64-1.1.1.rsz",
+  "downloadUrl": "https://github.com/r123singh/resume-studio/releases/download/v1.1.2/Resume-Studio-win-x64-1.1.2.rsz",
   "offer": "Free · NVIDIA included"
 }
